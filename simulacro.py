@@ -19,9 +19,7 @@ def ejercicio2():
         print("El numero debe estar entre 5 y 15")
         x = int(input("Ingrese un numero entre 5 y 15: "))
     
-    cantDivisibles = 0
-    mayor = None
-    menor = None
+    cantDivisibles, mayor, menor = 0, None, None
     while True:
         num = int(input("Ingrese numeros enteros positivos (-1 para salir): "))
         if num == -1:
@@ -43,14 +41,10 @@ def ejercicio2():
 
 def ejercicio3():
     def promedio(x, y):
-        return round(x / y, 2)
-    total = 0
-    catA = 0
-    catB = 0
-    catC = 0
-    YearsCatA = 0
-    YearsCatB = 0
-    YearsCatC = 0
+        return round(x / y, 2) if total > 0 else 0
+    
+    total, catA, catB, catC = 0, 0, 0, 0
+    YearsCatA, YearsCatB, YearsCatC = 0, 0, 0
     
     while True:
         year = int(input("Ingrese los años de servicio del empleado (-1 para salir): "))
@@ -73,4 +67,3 @@ def ejercicio3():
     print(f"Cantidad de empleados Categoria A: {catA}. Promedio: {promedio(YearsCatA, total)}")
     print(f"Cantidad de empleados Categoria B: {catB}. Promedio: {promedio(YearsCatB, total)}")
     print(f"Cantidad de empleados Categoria C: {catC}. Promedio: {promedio(YearsCatC, total)}")
-ejercicio3()
