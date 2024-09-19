@@ -56,10 +56,10 @@ def ejercicio3():
         if 1 <= year <= 5:
             catA += 1
             YearsCatA += year
-        if 6 <= year <= 10:
+        elif 6 <= year <= 10:
             catB += 1
             YearsCatB += year
-        if year >= 11:
+        elif year >= 11:
             catC += 1
             YearsCatC += year
         total += 1
@@ -67,3 +67,6 @@ def ejercicio3():
     print(f"Cantidad de empleados Categoria A: {catA}. Promedio: {promedio(YearsCatA, total)}")
     print(f"Cantidad de empleados Categoria B: {catB}. Promedio: {promedio(YearsCatB, total)}")
     print(f"Cantidad de empleados Categoria C: {catC}. Promedio: {promedio(YearsCatC, total)}")
+    return catA, catB, catC
+
+ejercicio3()
