@@ -68,5 +68,3 @@ def ejercicio3():
     print(f"Cantidad de empleados Categoria B: {catB}. Promedio: {promedio(YearsCatB, total)}")
     print(f"Cantidad de empleados Categoria C: {catC}. Promedio: {promedio(YearsCatC, total)}")
     return catA, catB, catC
-
-ejercicio3()
