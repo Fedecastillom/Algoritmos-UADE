@@ -1,0 +1,47 @@
+Ejercicio 1
+
+InicioAlgoritmo
+Ingresar Precio de venta
+Si precio de venta mayor a 30000
+    Imprimir el precio de venta menos el 5%
+Si precio de venta mayor a 20000
+    Imprimir el precio de venta menos el 2%
+Si precio de venta menor a 20000
+    Imprimir no se le puede aplicar descuento
+FinAlgoritmo
+
+Ejercicio 2
+
+InicioAlgoritmo
+IniciarCiclo
+    Ingresar edad de la persona
+    Si edad igual a -1
+        Salir ciclo
+    Si edad menor a 16
+        contador menores + 1
+    Si edad mayor a 16 y menor a 80
+        contador adultos y carnets +1
+    Si edad mayor a 80
+        contador mayores + 1
+Imprimir informe menores, adultos, mayores y carnets
+FinAlgoritmo
+
+Ejercicio 3
+
+InicioAlgoritmo
+IniciarCiclo
+    Si polizas > 10
+        Salir ciclo
+    Ingresar valor poliza
+    Si valor poliza menor a 6000 o mayor a 50000
+        Imprimir Valor poliza debe estar entre 6000 y 50000
+        Volver al inicio del ciclo
+    Si valor poliza entre 6000 y 30000
+        contador p6y30 + 1
+    Si valor poliza entre 30000 y 40000
+        contador p30y40 +1
+    Si valor poliza mayor a 40000
+        contador p40y50 + 1
+    contador polizas + 1
+Imprimir informe p6y30, p30y40, p40y50
+FinAlgoritmo
