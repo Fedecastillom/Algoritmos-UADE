@@ -31,4 +31,3 @@ def prod(nums):
     for x in range(len(nums) - 1):
         res += nums[x] * nums[x + 1]
     return res
-print(prod([1,2,3]))
